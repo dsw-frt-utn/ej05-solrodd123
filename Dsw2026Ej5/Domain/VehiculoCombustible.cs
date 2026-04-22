@@ -28,6 +28,7 @@ public class VehiculoCombustible: Vehiculo
 
     public override double CalcularConsumo(double kilometros)
     {
-        return kilometros * kilometrosPorLitro;
+        // Dividimos los km por el rendimiento y sumamos el extra
+        return (kilometros / kilometrosPorLitro) + litrosExtra;
     }
 }
